@@ -1,12 +1,86 @@
-# React + Vite
+Here’s a polished `README.md` you can drop at the root of your repo:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```markdown
+# TechTalk China
 
-Currently, two official plugins are available:
+A **React + Vite + Tailwind CSS** web app that curates the latest technology news from China — with pixel-perfect UI, category filtering (AI, EVs, Energy), live voting, and responsive design.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- **React 19 + Vite 7** for blazing-fast dev experience  
+- **Tailwind CSS v4** with modern UI components  
+- **Lucide Icons** for clean, scalable icons  
+- **React Router** for category-based navigation (`/ai`, `/evs`, `/energy`)  
+- **Responsive design**: desktop navigation + mobile hamburger menu  
+- **Voting system**: upvote stories inline  
+- **Search bar** with instant filtering  
+- **Featured story** section with pulse indicator  
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+src/
+main.jsx         # App entry point
+App.jsx          # Router + Layout
+index.css        # Tailwind imports
+context/         # Articles context (global state)
+data/            # Mock articles + categories
+utils/           # Time formatting helpers
+components/      # Header, Nav, Cards, Featured, etc.
+pages/           # Home + Category views
+
+````
+
+## 🛠️ Getting Started
+
+Clone the repo:
+```bash
+git clone https://github.com/ewingn/techtalkchina.git
+cd techtalkchina
+````
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run dev server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview production build:
+
+```bash
+npm run preview
+```
+
+## 📦 Dependencies
+
+* [React](https://react.dev) `^19.1.1`
+* [Vite](https://vitejs.dev) `^7.1.2`
+* [Tailwind CSS](https://tailwindcss.com) `^4.1.13`
+* [Lucide React](https://lucide.dev)
+* [React Router DOM](https://reactrouter.com)
+
+## 🖼️ Screenshots
+
+*(Add screenshots of Home, AI, EVs pages here once deployed!)*
+
+## 📜 License
+
+MIT License © 2025 Nathan Ewing
+
+```
+
+---
+
+Do you want me to also include a **deployment section** (Netlify/Vercel) so that anyone can preview it live after cloning, or keep it simple for now?
+```
