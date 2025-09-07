@@ -6,6 +6,11 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Latest from './pages/Latest'
 import Category from './pages/Category'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsOfService from './pages/TermsOfService'
+import ArticleDetail from './pages/ArticleDetail'
 import ErrorBoundary from './components/ErrorBoundary'
 
 function App() {
@@ -21,6 +26,12 @@ function App() {
               <Route path="/ai" element={<Category name="AI" />} />
               <Route path="/evs" element={<Category name="EVs" />} />
               <Route path="/energy" element={<Category name="Energy" />} />
+              <Route path="/medtech" element={<Category name="MedTech" />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/privacy" element={<PrivacyPolicy />} />
+              <Route path="/terms" element={<TermsOfService />} />
+              <Route path="/article/:id" element={<ArticleDetail />} />
               <Route path="*" element={<Navigate to="/latest" replace />} />
             </Routes>
           </main>

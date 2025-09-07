@@ -49,11 +49,46 @@ function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Categories</h3>
             <ul className="space-y-2">
-              <li><Link to="/ai" className="text-gray-400 hover:text-white transition-colors">AI & Technology</Link></li>
-              <li><Link to="/evs" className="text-gray-400 hover:text-white transition-colors">Electric Vehicles</Link></li>
-              <li><Link to="/energy" className="text-gray-400 hover:text-white transition-colors">Energy & Sustainability</Link></li>
-              <li><Link to="/medtech" className="text-gray-400 hover:text-white transition-colors">Medical Technology</Link></li>
-              <li><Link to="/latest" className="text-gray-400 hover:text-white transition-colors">Latest News</Link></li>
+              <li>
+                <Link 
+                  to="/ai" 
+                  className="text-gray-400 hover:text-white transition-colors block py-1"
+                >
+                  AI & Technology
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/evs" 
+                  className="text-gray-400 hover:text-white transition-colors block py-1"
+                >
+                  Electric Vehicles
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/energy" 
+                  className="text-gray-400 hover:text-white transition-colors block py-1"
+                >
+                  Energy & Sustainability
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/medtech" 
+                  className="text-gray-400 hover:text-white transition-colors block py-1"
+                >
+                  Medical Technology
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/latest" 
+                  className="text-gray-400 hover:text-white transition-colors block py-1"
+                >
+                  Latest News
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -61,10 +96,38 @@ function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
-              <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">About</Link></li>
-              <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
-              <li><Link to="/privacy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</Link></li>
-              <li><Link to="/terms" className="text-gray-400 hover:text-white transition-colors">Terms of Service</Link></li>
+              <li>
+                <Link 
+                  to="/about" 
+                  className="text-gray-400 hover:text-white transition-colors block py-1"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/contact" 
+                  className="text-gray-400 hover:text-white transition-colors block py-1"
+                >
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/privacy" 
+                  className="text-gray-400 hover:text-white transition-colors block py-1"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/terms" 
+                  className="text-gray-400 hover:text-white transition-colors block py-1"
+                >
+                  Terms of Service
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
