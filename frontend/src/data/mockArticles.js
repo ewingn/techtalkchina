@@ -43,8 +43,52 @@ publishedAt: "2025-09-06T16:45:00Z",
 votes: 203,
 comments: 42,
 image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=250&fit=crop"
+},
+{
+id: 5,
+title: "Tencent's AI-Powered Drug Discovery Platform Shows Promise",
+summary: "Tencent AI Lab's new drug discovery platform reduces molecule optimization time from months to days, targeting cancer and neurological diseases.",
+category: "MedTech",
+source: "Nature Biotechnology",
+publishedAt: "2025-09-06T14:20:00Z",
+votes: 178,
+comments: 28,
+image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop"
+},
+{
+id: 6,
+title: "BGI Genomics Launches Portable DNA Sequencer for Rural Healthcare",
+summary: "BGI's new portable sequencing device costs 90% less than traditional equipment, making genetic testing accessible in remote Chinese villages.",
+category: "MedTech",
+source: "Science Translational Medicine",
+publishedAt: "2025-09-06T12:30:00Z",
+votes: 145,
+comments: 19,
+image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=250&fit=crop",
+featured: false
+},
+{
+id: 7,
+title: "CATL Unveils Revolutionary Battery Health Monitoring System",
+summary: "CATL's new AI-powered system can predict battery failure 6 months in advance, potentially revolutionizing EV maintenance and safety.",
+category: "EVs",
+source: "Bloomberg",
+publishedAt: "2025-09-06T10:15:00Z",
+votes: 234,
+comments: 37,
+image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop"
+},
+{
+id: 8,
+title: "Mindray's AI Ultrasound Achieves 95% Diagnostic Accuracy",
+summary: "Chinese medical device giant Mindray's AI-enhanced ultrasound system outperforms human radiologists in detecting early-stage tumors.",
+category: "MedTech",
+source: "The Lancet Digital Health",
+publishedAt: "2025-09-06T09:45:00Z",
+votes: 167,
+comments: 24,
+image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&h=250&fit=crop"
 }
 ]
-
 
 export default mockArticles

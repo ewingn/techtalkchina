@@ -1,16 +1,13 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwind from '@tailwindcss/vite'
-
-export default defineConfig({
-  root: 'frontend',              // <- app lives here
-  publicDir: 'frontend/public',  // <- static assets
-  plugins: [react(), tailwind()],
-  build: {
-    outDir: 'dist',              // output folder at repo root
-    emptyOutDir: true,
-  },
-  server: {
-    port: 5174,                  // optional; use 5174 if you want
-  },
-})
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/ttssmallrec.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Talk China</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

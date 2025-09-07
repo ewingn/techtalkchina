@@ -44,6 +44,7 @@ export default function Home() {
   const aiArticles = getArticlesByCategory('AI').slice(0, 3)
   const evArticles = getArticlesByCategory('EVs').slice(0, 3)
   const energyArticles = getArticlesByCategory('Energy').slice(0, 3)
+  const medTechArticles = getArticlesByCategory('MedTech').slice(0, 3)
 
   const displayStats = [
     { label: 'Daily Readers', value: '25K+', icon: Users },
@@ -183,6 +184,27 @@ export default function Home() {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {energyArticles.map(article => (
+                <ArticleCard key={article.id} article={article} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* MedTech Section */}
+        {medTechArticles.length > 0 && (
+          <div>
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-2xl font-bold text-gray-900">Medical Technology</h2>
+              <Link
+                to="/medtech"
+                className="flex items-center text-red-500 hover:text-red-600 font-medium"
+              >
+                View All <ArrowRight className="w-4 h-4 ml-1" />
+              </Link>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {medTechArticles.map(article => (
                 <ArticleCard key={article.id} article={article} />
               ))}
             </div>

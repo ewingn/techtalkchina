@@ -1,4 +1,3 @@
-// frontend/src/components/Layout/Footer.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Twitter, Linkedin, Github } from 'lucide-react';
@@ -24,13 +23,23 @@ function Footer() {
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a 
+                href="https://www.linkedin.com/in/nathanew/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a 
+                href="https://newing21.github.io/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <Github className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="mailto:hello@techtalkchina.com" className="text-gray-400 hover:text-white transition-colors">
                 <Mail className="w-5 h-5" />
               </a>
             </div>
@@ -43,6 +52,7 @@ function Footer() {
               <li><Link to="/ai" className="text-gray-400 hover:text-white transition-colors">AI & Technology</Link></li>
               <li><Link to="/evs" className="text-gray-400 hover:text-white transition-colors">Electric Vehicles</Link></li>
               <li><Link to="/energy" className="text-gray-400 hover:text-white transition-colors">Energy & Sustainability</Link></li>
+              <li><Link to="/medtech" className="text-gray-400 hover:text-white transition-colors">Medical Technology</Link></li>
               <li><Link to="/latest" className="text-gray-400 hover:text-white transition-colors">Latest News</Link></li>
             </ul>
           </div>
@@ -51,10 +61,10 @@ function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+              <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">About</Link></li>
+              <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
+              <li><Link to="/privacy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/terms" className="text-gray-400 hover:text-white transition-colors">Terms of Service</Link></li>
             </ul>
           </div>
         </div>
