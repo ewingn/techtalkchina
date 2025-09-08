@@ -6,7 +6,7 @@ export default defineConfig({
   root: 'frontend',
   plugins: [react(), tailwind()],
   server: {
-    port: 5173,
+    port: 5188,
     host: true
   },
   build: {
