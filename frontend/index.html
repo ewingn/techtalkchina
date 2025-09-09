@@ -2,12 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/ttssmallrec.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tech Talk China</title>
+
+    <!-- Put ttssmallrec.jpg in frontend/public/ -->
+    <!-- Use a RELATIVE path so it works on GitHub Pages -->
+    <link rel="icon" type="image/svg+xml" href="./ttssmallrec.jpg" />
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Use a RELATIVE path so Vite handles it and GH Pages respects the base -->
+    <script type="module" src="./src/main.jsx"></script>
   </body>
 </html>
