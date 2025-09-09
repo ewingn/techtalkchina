@@ -17,10 +17,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # Only affects `run:` steps; actions still see the whole workspace
-    defaults:
-      run:
-        working-directory: frontend
     steps:
       - uses: actions/checkout@v4
 
@@ -30,15 +26,19 @@ jobs:
           cache: npm
           cache-dependency-path: frontend/package-lock.json
 
+      # Install & build INSIDE the frontend folder
       - run: npm ci
+        working-directory: frontend
       - run: npm run build
-      # copy index.html -> 404.html for SPA routing (BrowserRouter)
-      - run: node -e "require('fs').copyFileSync('../dist/index.html','../dist/404.html')"
+        working-directory: frontend
 
-      # Upload the built site from the repo root's /dist
+      # Create SPA fallback at the REPO ROOT dist/
+      - run: node -e "require('fs').copyFileSync('dist/index.html','dist/404.html')"
+
+      # Upload the built site from the root dist/ folder
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: dist
 
   deploy:
     needs: build
