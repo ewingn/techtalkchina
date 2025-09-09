@@ -38,7 +38,7 @@ jobs:
       # Upload the built site from the root dist/ folder
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: frontend/dist
 
   deploy:
     needs: build
